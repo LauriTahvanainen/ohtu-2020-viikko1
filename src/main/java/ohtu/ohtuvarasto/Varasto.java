@@ -20,13 +20,11 @@ public class Varasto {
         this(tilavuus);
         if (alkuSaldo < 0.0) {
             this.saldo = 0.0;
-            return;
-        }
-        if (alkuSaldo > tilavuus) { //tayteen ja ylimäärä hukkaan!
+        } else if (alkuSaldo > tilavuus) { //tayteen ja ylimäärä hukkaan!
             this.saldo = tilavuus;
-            return;
-        } 
-        this.saldo = tilavuus;  // mahtuu
+        } else {
+            this.saldo = alkuSaldo;
+        }  // mahtuu
     }
 
     // --- ottavat aksessorit eli getterit: ---
