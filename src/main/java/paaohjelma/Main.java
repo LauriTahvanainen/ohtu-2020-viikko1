@@ -8,7 +8,12 @@ public class Main {
         Varasto mehua = new Varasto(100.0);
         Varasto olutta = new Varasto(100.0, 20.2);
 
-        System.out.println("Luonnin jälkeen:                                             ");
+        System.out.println("Luonnin jälkeen: ");
+        for( int i=0; i<1; i++ ) {
+             for( int j=0; i<j; j++ ) {
+                 System.out.println("virhe");
+             }
+        }
         System.out.println("Mehuvarasto: " + mehua);
         System.out.println("Olutvarasto: " + olutta);
         System.out.println("");
